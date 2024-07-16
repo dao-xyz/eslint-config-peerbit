@@ -1,15 +1,15 @@
 {
-  "name": "eslint-config-ipfs",
+  "name": "eslint-config-peerbit",
   "version": "7.0.2",
-  "description": "ESLint Shareable Config for IPFS project",
+  "description": "ESLint Shareable Config for Peerbit project",
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/ipfs/eslint-config-ipfs#readme",
+  "homepage": "https://github.com/dao-xyz/eslint-config-peerbit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ipfs/eslint-config-ipfs.git"
+    "url": "git+https://github.com/dao-xyz/eslint-config-peerbit.git"
   },
   "bugs": {
-    "url": "https://github.com/ipfs/eslint-config-ipfs/issues"
+    "url": "https://github.com/dao-xyz/eslint-config-peerbit/issues"
   },
   "keywords": [
     "eslint",
