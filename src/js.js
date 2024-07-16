@@ -38,7 +38,7 @@ module.exports = {
     'no-div-regex': 'error',
     'no-empty': 'warn',
     /*  'no-extra-semi': 'error', */
-    'no-implicit-coercion': 'error',
+    'no-implicit-coercion': 'off',
     'no-loop-func': 'error',
     'no-nested-ternary': 'warn',
     'no-script-url': 'error',
@@ -101,6 +101,7 @@ module.exports = {
     'no-unmodified-loop-condition': 'off',
     'promise/param-names': 'off',
     'object-curly-spacing': 'off', // allow { } with space inside
+    'sort-imports': 'off',
   },
   settings: {
     jsdoc: {

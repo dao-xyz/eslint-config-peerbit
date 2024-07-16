@@ -47,6 +47,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
 
   }
 }
