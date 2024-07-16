@@ -13,6 +13,14 @@ module.exports = {
   plugins: [
     'etc'
   ],
+  overrides: [
+    {
+      "files": ["*.test.ts", "*.spec.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-expressions": "off"
+      }
+    }
+  ],
   rules: {
     'no-use-before-define': 'off', // Types often are recursive & no use before define is too restrictive
     'etc/prefer-interface': 'error', // https://ncjamieson.com/prefer-interfaces/
@@ -37,7 +45,8 @@ module.exports = {
     '@typescript-eslint/comma-dangle': 'off',
     "@typescript-eslint/strict-boolean-expressions": 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
-    '@typescript-eslint/prefer-nullish-coalescing': 'off'
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
 
   }
 }

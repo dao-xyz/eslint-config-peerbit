@@ -17,6 +17,14 @@ module.exports = {
     'jsdoc',
     'import'
   ],
+  overrides: [
+    {
+      "files": ["*.test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
   rules: {
     strict: ['error', 'safe'],
     curly: 'error',

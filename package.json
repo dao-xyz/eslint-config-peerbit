@@ -135,7 +135,8 @@
     "eslint-plugin-jsdoc": "^48.2.2",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-config-prettier": "^9.1.0"
   },
   "devDependencies": {
     "aegir": "^43.0.1",
