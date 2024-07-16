@@ -23,11 +23,18 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
     '@typescript-eslint/method-signature-style': ['error', 'method'], // enforce method signature style
     'no-unused-vars': 'off', // disable this rule to use @typescript-eslint/no-unused-vars instead
+    '@typescript-eslint/semi': 'off',
     '@typescript-eslint/no-unused-vars': 'error', // disallow unused variables
     'no-return-await': 'off', // disable this rule to use @typescript-eslint/return-await instead
     '@typescript-eslint/return-await': ['error', 'in-try-catch'], // require awaiting thenables returned from try/catch
     'jsdoc/require-param': 'off', // do not require jsdoc for params
     'jsdoc/require-param-type': 'off', // allow compiler to derive param type
-    'no-undef': 'off' // typescript already checks for undefined variables so this is redundant - https://typescript-eslint.io/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    'no-undef': 'off', // typescript already checks for undefined variables so this is redundant - https://typescript-eslint.io/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    // indents as tabs
+    '@typescript-eslint/indent': ['error', 'tab'],
+    '@typescript-eslint/quotes': 'off',
+    'no-tabs': 'off',
+    '@typescript-eslint/comma-dangle': 'off',
+
   }
 }

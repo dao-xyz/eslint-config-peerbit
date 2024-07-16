@@ -1,7 +1,9 @@
 'use strict'
 
 module.exports = {
-  extends: 'standard',
+  extends: [
+    'standard'
+  ],
   parserOptions: {
     sourceType: 'script'
   },
@@ -27,7 +29,7 @@ module.exports = {
     'no-console': 'error',
     'no-div-regex': 'error',
     'no-empty': 'warn',
-    'no-extra-semi': 'error',
+    /*  'no-extra-semi': 'error', */
     'no-implicit-coercion': 'error',
     'no-loop-func': 'error',
     'no-nested-ternary': 'warn',
@@ -85,7 +87,9 @@ module.exports = {
         // the overall order of imports - anything not in this list is grouped together at the end
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type']
       }
-    ]
+    ],
+    "indent": [2, "tab"],
+    "no-tabs": 0, 
   },
   settings: {
     jsdoc: {
