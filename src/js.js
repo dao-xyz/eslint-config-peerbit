@@ -90,6 +90,9 @@ module.exports = {
     ],
     "indent": [2, "tab"],
     "no-tabs": 0, 
+    'no-unmodified-loop-condition': 'off',
+    'promise/param-names': 'off',
+    'object-curly-spacing': 'off', // allow { } with space inside
   },
   settings: {
     jsdoc: {
