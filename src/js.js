@@ -42,7 +42,7 @@ module.exports = {
     'no-loop-func': 'error',
     'no-nested-ternary': 'warn',
     'no-script-url': 'error',
-    'no-warning-comments': 'warn',
+    'no-warning-comments': 'off',
     'max-nested-callbacks': ['error', 4],
     'max-depth': ['error', 4],
     'require-yield': 'error',
@@ -90,6 +90,8 @@ module.exports = {
     'no-unmodified-loop-condition': 'off',
     'promise/param-names': 'off',
     'object-curly-spacing': 'off', // allow { } with space inside
+    'prefer-const': 'off',
+    
   },
   settings: {
     jsdoc: {

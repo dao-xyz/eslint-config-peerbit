@@ -27,7 +27,7 @@ module.exports = {
     '@typescript-eslint/prefer-function-type': 'off', // conflicts with 'etc/prefer-interface'
     '@typescript-eslint/explicit-function-return-type': 'off', // functions does not require return types
     '@typescript-eslint/no-this-alias': 'off', // allow 'const self = this'
-    '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
+    '@typescript-eslint/await-thenable': 'off', // TODO use this? disallows awaiting a value that is not a "Thenable"
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
     '@typescript-eslint/method-signature-style': 'off', // allow method signature style
     'no-unused-vars': 'off', // disable this rule to use @typescript-eslint/no-unused-vars instead
@@ -53,6 +53,25 @@ module.exports = {
     "@typescript-eslint/dot-notation": 'off',
     "@typescript-eslint/promise-function-async": 'off',
     "@typescript-eslint/consistent-type-definitions": 'off',
+    'no-trailing-spaces': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+    '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/prefer-readonly': 'off',
+    '@typescript-eslint/lines-between-class-members': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/consistent-generic-constructors': 'off',
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+    'prefer-const': 'off',
+    'no-trailing-spaces': 'off',
+    'padded-blocks': 'off',
+    'no-nested-ternary': 'off',
+    'complexity': 'off',
+    'no-new': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'generator-star-spacing': 'off',
 
   }
 }
