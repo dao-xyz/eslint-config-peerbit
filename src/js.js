@@ -84,24 +84,12 @@ module.exports = {
     // should revisit once following issue is fixed:
     // https://github.com/jsdoctypeparser/jsdoctypeparser/issues/50
     'jsdoc/valid-types': 'off',
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: false
-        },
-        'newlines-between': 'never',
-        // the overall order of imports - anything not in this list is grouped together at the end
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type']
-      }
-    ],
+    'import/order': 'off', // sort imports does not work with the prettier ordering plugin
     "indent": [2, "tab"],
     "no-tabs": 0, 
     'no-unmodified-loop-condition': 'off',
     'promise/param-names': 'off',
     'object-curly-spacing': 'off', // allow { } with space inside
-    'sort-imports': 'off',
   },
   settings: {
     jsdoc: {

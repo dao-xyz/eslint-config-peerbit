@@ -23,13 +23,13 @@ module.exports = {
   ],
   rules: {
     'no-use-before-define': 'off', // Types often are recursive & no use before define is too restrictive
-    'etc/prefer-interface': 'error', // https://ncjamieson.com/prefer-interfaces/
+    'etc/prefer-interface': 'off', // TODO use this? https://ncjamieson.com/prefer-interfaces/
     '@typescript-eslint/prefer-function-type': 'off', // conflicts with 'etc/prefer-interface'
     '@typescript-eslint/explicit-function-return-type': 'off', // functions does not require return types
     '@typescript-eslint/no-this-alias': 'off', // allow 'const self = this'
     '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
-    '@typescript-eslint/method-signature-style': ['error', 'method'], // enforce method signature style
+    '@typescript-eslint/method-signature-style': 'off', // allow method signature style
     'no-unused-vars': 'off', // disable this rule to use @typescript-eslint/no-unused-vars instead
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/no-unused-vars': 'error', // disallow unused variables
@@ -39,7 +39,6 @@ module.exports = {
     'jsdoc/require-param-type': 'off', // allow compiler to derive param type
     'no-undef': 'off', // typescript already checks for undefined variables so this is redundant - https://typescript-eslint.io/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
     // indents as tabs
-    '@typescript-eslint/indent': ['error', 'tab'],
     '@typescript-eslint/quotes': 'off',
     'no-tabs': 'off',
     '@typescript-eslint/comma-dangle': 'off',
@@ -48,6 +47,12 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/prefer-interface': 'off',
+    '@typescript-eslint/indent': 'off', // will not work with prettier
+    "@typescript-eslint/dot-notation": 'off',
+    "@typescript-eslint/promise-function-async": 'off',
+    "@typescript-eslint/consistent-type-definitions": 'off',
 
   }
 }
