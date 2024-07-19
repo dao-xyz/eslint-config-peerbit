@@ -8,16 +8,23 @@ module.exports = {
   },
   extends: [
     './js.js',
-    'love'
+    'love',
+    'prettier'
   ],
   plugins: [
     'etc'
   ],
   overrides: [
     {
-      "files": ["*.test.ts", "*.spec.ts"],
+      "files": ["*.test.ts", "*.spec.ts", "tests.ts"],
       "rules": {
         "@typescript-eslint/no-unused-expressions": "off"
+      }
+    },
+    {
+      "files": ["**/test/**","**/tests/**", "**/benchmark/**"],
+      "rules": {
+        "no-console": "off"
       }
     }
   ],
@@ -32,7 +39,7 @@ module.exports = {
     '@typescript-eslint/method-signature-style': 'off', // allow method signature style
     'no-unused-vars': 'off', // disable this rule to use @typescript-eslint/no-unused-vars instead
     '@typescript-eslint/semi': 'off',
-    '@typescript-eslint/no-unused-vars': 'error', // disallow unused variables
+    '@typescript-eslint/no-unused-vars': 'off', // TODO use this? disallow unused variables
     'no-return-await': 'off', // disable this rule to use @typescript-eslint/return-await instead
     '@typescript-eslint/return-await': ['error', 'in-try-catch'], // require awaiting thenables returned from try/catch
     'jsdoc/require-param': 'off', // do not require jsdoc for params
@@ -53,7 +60,6 @@ module.exports = {
     "@typescript-eslint/dot-notation": 'off',
     "@typescript-eslint/promise-function-async": 'off',
     "@typescript-eslint/consistent-type-definitions": 'off',
-    'no-trailing-spaces': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unnecessary-type-assertion': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
@@ -64,6 +70,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+    '@typescript-eslint/no-confusing-void-expression': 'off',
     'prefer-const': 'off',
     'no-trailing-spaces': 'off',
     'padded-blocks': 'off',
@@ -72,6 +79,35 @@ module.exports = {
     'no-new': 'off',
     'no-mixed-spaces-and-tabs': 'off',
     'generator-star-spacing': 'off',
-
+    'max-nested-callbacks': 'off',
+    'one-var': 'off',
+    'typescript-eslint/naming-convention': 'off',
+    'valid-typeof': 'off',
+    'array-callback-return': 'off',
+    'no-unneeded-ternary': 'off',
+    'no-multiple-empty-lines': 'off',
+    'spaced-comment': 'off',
+    "no-undef-init": 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    'no-loop-func': 'off',
+    'no-sequences': 'off',
+    '@typescript-eslint/consistent-indexed-object-style': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
+    '@typescript-eslint/prefer-promise-reject-errors': 'off',
+    '@typescript-eslint/brace-style': 'off',
+    'no-labels': 'off',
+    '@typescript-eslint/no-dynamic-delete': 'off',
+    'import/no-named-default': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off',
+    '@typescript-eslint/no-useless-constructor': 'off',
+    'camelcase': 'off',
+    '@typescript-eslint/prefer-ts-expect-error': 'off',
+    'curly': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    'object-shorthand': 'off',
+    '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+    'new-parens': 'off',
+    'new-cap': 'off',
+    'semi': 'off',
   }
 }

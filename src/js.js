@@ -2,7 +2,8 @@
 
 module.exports = {
   extends: [
-    'standard'
+    'standard',
+    'prettier'
   ],
   parserOptions: {
     sourceType: 'script'
@@ -15,13 +16,19 @@ module.exports = {
   plugins: [
     'no-only-tests',
     'jsdoc',
-    'import'
+    'import',
   ],
   overrides: [
     {
-      "files": ["*.test.js", "*.spec.js"],
+      "files": ["*.test.js", "*.spec.js", "tests.js"],
       "rules": {
         "no-unused-expressions": "off"
+      }
+    },
+    {
+      "files": ["**/test/**","**/tests/**", "**/benchmark/**"],
+      "rules": {
+        "no-console": "off"
       }
     }
   ],
@@ -39,16 +46,16 @@ module.exports = {
     'no-empty': 'warn',
     /*  'no-extra-semi': 'error', */
     'no-implicit-coercion': 'off',
-    'no-loop-func': 'error',
     'no-nested-ternary': 'warn',
     'no-script-url': 'error',
     'no-warning-comments': 'off',
-    'max-nested-callbacks': ['error', 4],
-    'max-depth': ['error', 4],
+    'max-nested-callbacks': ['error', 6],
+    'max-depth': ['error', 8],
     'require-yield': 'error',
     // plugins
     'no-only-tests/no-only-tests': 'error',
-    'jsdoc/check-alignment': 'error',
+    'jsdoc/check-alignment': 'off',
+    'jsdoc/tag-lines': 'off',
     'jsdoc/check-examples': 'off',
     'jsdoc/check-indentation': 'error',
     'jsdoc/check-param-names': 'error',
@@ -68,7 +75,7 @@ module.exports = {
     'jsdoc/require-description': 'off',
     'jsdoc/require-description-complete-sentence': 'off',
     'jsdoc/require-example': 'off',
-    'jsdoc/require-hyphen-before-param-description': 'error',
+    'jsdoc/require-hyphen-before-param-description': 'off',
     'jsdoc/require-jsdoc': 'off',
     'jsdoc/require-param': 'error',
     'jsdoc/require-param-description': 'off',
@@ -91,6 +98,23 @@ module.exports = {
     'promise/param-names': 'off',
     'object-curly-spacing': 'off', // allow { } with space inside
     'prefer-const': 'off',
+    'no-multiple-empty-lines': 'off',
+    'spaced-comment': 'off',
+    "no-undef-init": 'off',
+    'no-loop-func': 'off',
+    'no-sequences': 'off',
+    'no-labels': 'off',
+    'quotes': 'off',
+    'comma-dangle': 'off',
+    'no-trailing-spaces': 'off',
+    'import/no-named-default': 'off',
+    'no-useless-return': 'off',
+    'camelcase': 'off',
+    'curly': 'off',
+    'object-shorthand': 'off',
+   'new-parens': 'off',
+   'new-cap': 'off',
+   'semi': 'off',
     
   },
   settings: {
