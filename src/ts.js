@@ -109,5 +109,6 @@ module.exports = {
     'new-parens': 'off',
     'new-cap': 'off',
     'semi': 'off',
+    'no-useless-return': 'off',
   }
 }

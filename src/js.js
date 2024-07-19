@@ -34,7 +34,6 @@ module.exports = {
   ],
   rules: {
     strict: ['error', 'safe'],
-    curly: 'error',
     'block-scoped-var': 'error',
     complexity: 'warn',
     'default-case': 'error',
